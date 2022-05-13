@@ -66,6 +66,7 @@
 .nav {
   display: flex;
   background-color: #333;
+  
 }
 
 /* Style the navigation bar links */
@@ -74,6 +75,7 @@
   padding: 14px 20px;
   text-decoration: none;
   text-align: justify;
+  
 }
 
 /* Change color on hover */
@@ -93,8 +95,9 @@
 /* Sidebar/left column */
 .side {
   flex: 30%;
-  background-color:rgba(255, 228, 196, 0);
+  background-color:rgba(255, 228, 196, 0.3);
   padding: 20px;
+
 }
 
 /* Main column */

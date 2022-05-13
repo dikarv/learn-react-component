@@ -9,9 +9,9 @@ class NavbarComponent extends Component {
 
       //ini merupakan Fragment
       <>
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" opacity={"0%"}>
           <Container fluid>
-            <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+            <Navbar.Brand href="#">Otaku Desuka?</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav
@@ -22,17 +22,17 @@ class NavbarComponent extends Component {
                 <Nav.Link href="#action1">Home</Nav.Link>
                 <Nav.Link href="#action2">Anime List</Nav.Link>
                 <NavDropdown title="Link" id="navbarScrollingDropdown">
-                  <NavDropdown.Item href="#action3">On Goind</NavDropdown.Item>
+                  <NavDropdown.Item href="#action3">OnGoing Anime</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">
-                    Another action
+                    Bacht Anime
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action5">
-                    Something else here
+                    Next Season
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="#" disabled>
-                  Link
+                  Wacth
                 </Nav.Link>
               </Nav>
               <Form className="d-flex">

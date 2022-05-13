@@ -2,7 +2,8 @@ import './App.css';
 import NavbarComponent from './Navbar';
 import Content from './Content';
 import Header from './Header';
-
+import Footer from './Footer';
+import GrandParent from './grand-child';
 
 
 function App() {
@@ -10,8 +11,10 @@ function App() {
     <div className='App'>
         <Header/>
         <NavbarComponent/>
-        <Content/>       
-    </div>
+        <Content/>
+        <Footer/>       
+        <GrandParent/>
+            </div>
     
   );
 }

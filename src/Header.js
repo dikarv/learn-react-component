@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-bootstrap';
-import logo3 from './logo.svg'
+import logo3 from './konusuba.jpg'
 
 
 
@@ -8,9 +8,9 @@ import logo3 from './logo.svg'
 class Header extends Component {
     render() {
         return (
-            <div>
+            <header className="header">
                 <h1><img src={logo3} alt='' width="500px" height="250px"/></h1>
-            </div>
+            </header>
         );
     }
 }
