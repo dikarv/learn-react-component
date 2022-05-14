@@ -1,19 +1,21 @@
 import React, { Component } from "react";
-import GrandChild from "./Grand-child";
+import Card from "./Card";
 
 
-class Footer extends Component {
+
+class CardContent extends Component {
   render() {
+    let cucu = "ikan curut"
     return (
       <footer className="footer">
         <hr color="grey" />
         <h5>Copyright © 2022 - OtamuDesu</h5>
-        <h1>Helllo ikan {this.props.anak}</h1>
-        <GrandChild cucu={this.props.anak} />
+        <h3>{cucu} ini cucu ikan {this.props.fish} dan {this.props.fish1}</h3>
+
         
       </footer>
     );
   }
 }
 
-export default Footer;
+export default CardContent;

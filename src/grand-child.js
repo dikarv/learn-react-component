@@ -1,53 +1,17 @@
-import React, { Component } from 'react';
-import { connect } from 'react-bootstrap';
+import React, { Component } from "react";
+import Footer from "./Footer";
 
 
-
-
-
-class Child extends Component {
-    render () {
-      const { onClick } = this.props
-  
-      return <div onClick={onClick} />
-    }
+class GrandChild extends Component {
+  render() {
+    return (
+      <footer className="footer">
+        <hr color="grey" />
+        <h5>Copyright © 2022 - OtamuDesu</h5>
+        <h1>Ini cucu  {this.props.cucu}</h1>
+      </footer>
+    );
   }
-  
-  Child.defaultProps = {
-    onClick () {
-      console.warn('No handler for `onClick` prop!')
-    }
-  }
-  
-  class Parent extends Component {
+}
 
-    handleOnClick (data) {
-      const { onClick } = this.props
-      // handle logic at this component level
-      // component only knows about its self
-      onClick(data /* or new data derived from data */)
-    }
-    render () {
-      return <Child onClick={this.handleOnClick} />
-    }
-  }
-  
-  Parent.defaultProps = {
-    onClick () {
-      console.warn('No handler for `onClick` prop!')
-    }
-  }
-  
-  class GrandParent extends Component {
-    
-    handleOnClick (data) {
-      // handle logic at this component level
-      // component only knows about its self
-    }
-    render () {
-      return <Parent onClick={this.handleOnClick} />
-    }
-  }
-
-
-  export default GrandParent;
+export default GrandChild;

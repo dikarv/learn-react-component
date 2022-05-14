@@ -3,17 +3,20 @@ import NavbarComponent from './Navbar';
 import Content from './Content';
 import Header from './Header';
 import Footer from './Footer';
-import GrandParent from './grand-child';
+import GrandParent from './Grand-child';
+import Card from './Card';
 
 
 function App() {
+  let namae = "Lele";
   return (
+ 
     <div className='App'>
-        <Header/>
+        <Header />
         <NavbarComponent/>
         <Content/>
-        <Footer/>       
-        <GrandParent/>
+        <Footer anak={"Ikan Mas"} />       
+        <Card ikan={namae} ikan1={"ikan Kembung"}/>
             </div>
     
   );
