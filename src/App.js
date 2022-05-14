@@ -5,6 +5,7 @@ import Header from './Header';
 import Footer from './Footer';
 import GrandParent from './Grand-child';
 import Card from './Card';
+import Section from './Section';
 
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
         <Content/>
         <Footer anak={"Ikan Mas"} />       
         <Card ikan={namae} ikan1={"ikan Kembung"}/>
+        <Section/>
+
             </div>
     
   );
